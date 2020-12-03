@@ -1,13 +1,184 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
+
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+span {
+  font-weight: 500;
+  font-family: "Fira Sans";
+}
+
+.font-class {
+  font-weight: 500;
+  font-family: "Fira sans";
+}
+
+body,
+html,
+.App,
+#root,
+.auth-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  text-align: center;
+}
+
+.auth-wrapper {
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  /*for mobile phones*/
+
+  .auth-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-size: 100%;
+    background-color: #ffffff;
+    display: flex;
+  }
+}
+
+.auth-wrapper .form-control:focus {
+  border-color: #2255ff;
+  box-shadow: none;
+}
+
+.auth-wrapper h3 {
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+.custom-control-label {
+  font-weight: 400;
+}
+
+.forgot-password,
+.forgot-password a {
+  text-align: right;
+  font-size: 13px;
+  padding: 10px;
+  color: #7f7d7d;
+  margin: 0;
+}
+
+.text-index a {
+  margin: auto;
+
+  font-size: 13px;
+  padding: 20px;
+  color: #7f7d7d;
+}
+
+.text-center a {
+  margin: auto;
+  font-size: 13px;
+  padding: 20px;
+  color: #167bff;
+  text-align: center;
+  text-decoration: none;
+}
+
+p {
+  margin: auto;
+  font-size: 13px;
+  padding: 20px;
+  color: #7f7d7d;
+  text-align: center;
+  text-decoration: none;
+}
+
+.align-button {
+  margin: auto;
+}
+
+.forgot-password a {
+  color: #167bff;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.new-register,
+.new-register a {
+  text-align: left;
+  font-size: 13px;
+  padding: 10px;
+  color: #7f7d7d;
+  margin: 0;
+}
+
+.new-register a {
+  color: #167bff;
+  margin: 10px;
+}
+
+/*HOME*/
+
+.home-inner {
+  padding: 50px;
+  display: grid;
+  width: 100%;
+  grid-row-gap: 10px;
+  overflow: auto;
+}
+
+.background .card-margin {
+  margin: auto;
+}
+
+.background-login {
+  width: 100vw;
+  height: 100vh;
+  background-size: 100%;
+  position: absolute;
+
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Text styles */
+  text-align: center;
+}
+
+.background-dash {
+  width: 100vw;
+  height: 100vh;
+  background-size: 100%;
+  /*background-image: url("https://source.unsplash.com/1600x900/?abstract");*/
+  display: flex;
+}
+
+.drawericon {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  /*for mobile phones*/
+  .background-dash {
+    margin-top: 40px;
+    width: 100vw;
+    height: 100vh;
+    background-size: 100%;
+    display: flex;
+  }
 }

@@ -36,3 +36,66 @@
     transform: rotate(360deg);
   }
 }
+.boxContent {
+  height: 200px;
+  background-image: url("https://source.unsplash.com/1600x900/?abstract");
+  background-size: 100%;
+  padding-top: 100px;
+  position: absolute;
+  width: 100%;
+}
+
+.backContent {
+  max-width: 75%;
+  position: absolute;
+  top: 150px;
+  left: 450px;
+  padding-top: 20px;
+  padding-left: 0;
+  margin-left: 0;
+}
+@media (max-width: 1800px) {
+  .backContent {
+    max-width: 70%;
+  }
+}
+@media (max-width: 1530px) {
+  .backContent {
+    max-width: 65%;
+  }
+}
+@media (max-width: 1320px) {
+  .backContent {
+    grid-auto-rows: 50%;
+    max-width: 70%;
+    left: 350px;
+  }
+}
+@media (max-width: 1200px) {
+  .backContent {
+    max-width: 65%;
+    left: 350px;
+  }
+}
+@media (max-width: 1020px) {
+  .backContent {
+    max-width: 60%;
+    left: 350px;
+  }
+}
+@media (max-width: 900px) {
+  .backContent {
+    max-width: 55%;
+    left: 350px;
+  }
+}
+@media (max-width: 830px) {
+  .backContent {
+    top: 1100px;
+    max-width: 100%;
+    left: 0px;
+  }
+}
+.wrapper {
+  position: relative;
+}
