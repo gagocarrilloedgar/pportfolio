@@ -1,0 +1,349 @@
+{
+  "home": {
+    "helmet": {
+      "title": "Portfolio | Change the rules"
+    },
+    "projectsgrid": {
+      "emptytags": "There are no project with that tag"
+    }
+  },
+  "landing": {
+    "helmet": {
+      "title": "Portfolio | Change the rules",
+      "tags": "Project marked with: {{ptag}}",
+      "login": "Portfolio | Login",
+      "register": "Portfolio | Register"
+    },
+    "buttons": {
+      "login": "Login",
+      "register": "Create account",
+      "contact": "Contact"
+    },
+    "searchBar": {
+      "placeholder": "Keyword of the project you are interested in"
+    },
+    "hero": {
+      "title": "Showcase your potential and let job opportunities find you",
+      "subtitle": "Pportfolio is a platform that gamifies the whole recruitment experience while helps you power, discover and learn new abilities.",
+      "startBtn": "Sign up now",
+      "startBtnCompany": "Hire talent",
+      "how": "¿How does it work?",
+      "beta": "Beta is on its way and big things are coming",
+      "partner": "Companies already supporting Pportfol.io",
+      "step1Title": "1. Chose your specialty ",
+      "step2Title": "2. Chose your level",
+      "step3Title": "3. Let's start",
+      "step4Title": "4. Reach top 100",
+      "step5Title": "5. Get top employment offers or advance",
+      "step1subtitle": "It doesn't matter if you have experience, a diploma, or not, just choose what you like. Some of the most popular are: data science, UX / UI designer, copywritter, among many others",
+      "step2subtitle": "Do you have experience? Great! Here choose the level according to your ability, this will define the league where you will participate: Student, Junior, Senior or Top",
+      "step3subtitle": "We present the weekly challenge, the objectives, rules and details that you need to know and, now you can start creating!",
+      "step4subtitle": "Create and improve to get to the top 100 to start having company visualization and employment offers.",
+      "step5subtitle": "Accept the offer from a company or go to the next level. ",
+      "close": "close",
+      "contact": "Discover talent"
+    },
+    "hero2":{
+      "title":"Companies and organizations that support Pportfol.io",
+      "substitle":"Do you want to launch your digital career? We don't care about your titles, only your skills!",
+      "explanation":"At Pportfolio we do not believe in titles or in the traditional form of evaluation and we believe that things have to change. That is why we want to promote the learning by doing. We help you improve and create your career whoever you are.",
+      "button":"¡I want to start now!"
+    },
+    "hero3":{
+      "title":"Still having some doubts?",
+      "subtitle":"Let's clarify some things here",
+      "whatTitle":"What is Pportfolio?",
+      "whatSub":"Pportfolio is a tournament-based platform for digital talent recruitment & development that focuses on hands-on skills rather than titles.",
+      "how":"How do we do that?",
+      "options":"And many more!",
+      "step1Title": "1. Chose your specialty",
+      "step2Title": "2. Chose your level",
+      "step3Title": "3. Let's start",
+      "step4Title": "4. Reach top 100",
+      "step5Title": "5. Get top employment offers",
+      "step1subtitle": "It doesn't matter if you have experience, a diploma, or not, just choose what you like. Some of the most popular are: data science, UX / UI designer, copywritter, among many others",
+      "step2subtitle": "Do you have experience? Great! Here choose the level according to your ability, this will define the league where you will participate: Student, Junior, Senior or Top",
+      "step3subtitle": "We present the weekly challenge, the objectives, rules and details that you need to know and, now you can start creating!",
+      "step4subtitle": "Create and improve to get to the top 100 to start having company visualization and employment offers.",
+      "step5subtitle": "Accept the offer from a company or go to the next level. "
+    },
+    "hero4":{
+      "title": "Do you have questions, need some help? We are here for you.",
+      "button": "Get in touch"
+    },
+    "login": {
+      "title": "Hey!",
+      "loginButton": "Login",
+      "googleLogin": "Login with Google",
+      "noaccount": "New around here?",
+      "registerButton": "Register",
+      "googleOption": "Or login with Google",
+      "errorTitle": "Ups, something went wrong.",
+      "errorDescription": "It is possible that either your email or password were not correct.",
+      "closeDialog": "Close",
+      "emailLabel": "Email",
+      "psswdLabel": "Password"
+    },
+    "register": {
+      "title": " Create your account",
+      "loginButton": "Login",
+      "googleLogin": "Register with Google",
+      "alreadyuser": "Already a user?",
+      "registerButton": "Let's go",
+      "googleOption": "Or login with Google",
+      "errorTitle": "Ups, something went wrong.",
+      "errorDescription": "It is possible that either your email or password were not correct.",
+      "closeDialog": "Cerrar",
+      "nameLabel": "Name",
+      "emailLabel": "Email",
+      "psswdLabel": "Password"
+    }
+  },
+  "business":{
+    "helmet": {
+      "title": "Portfolio | Find the talent you deserve",
+      "login": "Portfolio | Login",
+      "register": "Portfolio | Sign in"
+    },
+    "appbar":{
+      "login":"Login",
+      "register":"Register",
+      "business":"Hire talent",
+      "user": "I have talent",
+      "team":"Team",
+      "prices": "Prices",
+      "tools":"Tools"
+    },
+    "hero":{
+      "title":"Discover the digital talent your company needs",
+      "subtitle":"We improve the direct profile search by providing a unique dashboard powered by a gamified pselection latform.",
+      "interested":"Sounds good right?",
+      "button":"Subscribe me for the beta launch"
+    },
+    "hero2":{
+      "title":"Ventures supporting Pportfol.io",
+      "button":"Get early acces",
+      "subtitle":"You have the projects, we have the talent.",
+      "description":" Discover the profile that fits wihtin your company philosofy, team and skillset needed, easier and faster than ever.",
+      "button2":"I want a free demo now"
+    },
+    "hero3":{
+      "title":"Why Portfolio?",
+      "feat1title":"Talent diret search",
+      "feat1sub":"Connect with talent faster",
+      "feat1desc":" Find the best profiles within the skills you are looking for with a simple glance at the list of participants in our leagues.",
+      "feat2title":"Skills verification",
+      "feat2sub":"Verify your profile skills without interviews",
+      "feat2desc":"Get profiles that fit 100% with your expectations and requirements. With a few questions we take care of showing you the best profiles.",
+      "feat3title":"Gaming experience",
+      "feat3sub":"A tournament that unifies everything",
+      "feat3desc":"We create challenges and tournaments with a triple objective: to validate knowledge, offer a unique recruitment experience and finally help both the user and the company to improve.",
+      "feat4title":"Team affinity",
+      "feat4sub":"Team-profile compatibility management like never before",
+      "feat4desc":"We connect your team with the participants in a much more relaxed environment and without the need to arrange interviews. What better way to see the affinity than working together right?",
+      "feat5title":"Profile KPIs",
+      "feat5sub":"Artificial power that measures the most human",
+      "feat5desc":"A powerful dashboard to customize the profile you are looking for based on your team, project and defined requirements. Stop screening CVs, go to Pportfolio."
+    },
+    "contact":{
+      "title":"Contact us",
+      "name":"Name",
+      "nameplaceholder":"Write  you name",
+      "email":"Email",
+      "emailplaceholder":"Email",
+      "message":"How can we help you?",
+      "button":"Send",
+      "sucess":"Your contact has been succesdully send"
+    }
+  },
+  "profile": {
+    "hero": {
+      "title": "Title"
+    },
+    "editable": {
+      "name": " Name",
+      "what": "What do I do",
+      "email": "Email",
+      "lookingfor": "Currently",
+      "university": "University/Study centre",
+      "level": "Last coursed degree",
+      "major": "Studies title",
+      "who": "Who I am",
+      "league": "Specialty",
+      "explevel": "Experience level",
+      "rank":"Rank",
+      "picContext": "To update your profile picture just paste the link from the your favourite social media picture",
+      "urlContext": "Here you can change your personal url. This part will go at the end of pporfol.io/. Be aware that once you cange it, the old one will be deleted",
+      "imageTitle": "Image title",
+      "changePic": "Change picture",
+      "universityDescr": "University/Study centre",
+      "levelDescr": "CFGM, CFGS, University, Master,PHD,",
+      "majorDescr": "Aerospace, industrial, arquitechture, biotech,computer science, developer, etc",
+      "buttons": {
+        "change": "Change profile picture",
+        "qr": "View QR",
+        "save": "Save",
+        "url": "Change URL",
+        "style": "Profile style"
+      }
+    },
+    "view": {
+      "contact": "Contact",
+      "about": "About ",
+      "experience": "Experience",
+      "studies": "Studies",
+      "currently": "What I am looking for",
+      "share": "Share profile",
+      "buttons": {
+        "qr": "View QR",
+        "skills": "More skills"
+      }
+    },
+    "qrcode": {
+      "button": "View QR",
+      "title": "QR code",
+      "close": "Close"
+    },
+    "projectsgrid": {
+      "empty": "There are no projects yet"
+    }
+  },
+  "dashboard": {
+    "helmet": {
+      "title": "Pportfolio | App ",
+      "learn": "Pportfolio | Learn",
+      "home": "Pportfolio | Home",
+      "leagues": "Pportfolio | Leagues"
+    },
+    "appbar": {
+      "logout": "Logout"
+    },
+    "editProject": {
+      "title": "Edit",
+      "contentText": "You're about to edit this project. Once you save it, you can't go back",
+      "projectTitle": "Project title",
+      "projectDescription": "Project description",
+      "projectImage": "Image link",
+      "projectLink": "Project link",
+      "close": "Cancel",
+      "save": "Save",
+      "tagPlaceHolder": "Add up to 3 skills to this project"
+    },
+    "premium": {
+      "title": "We are currently working to have the best services ready and the final touches are missing so you can get the most out of your portfolio with your premium account. If you have questions or would like to know more about the current situation of the project, please fill out the form in the contact area.",
+      "dialogTitle": "Premium account",
+      "description": "In order to be able to see the analaytics of your projects, account, customize styles, colors, improve positioning and much more, you must have a premium subscription. If you want to go to premium you can do it right now, it will take only 5 '.",
+      "close": "Close",
+      "update": "Let's gear up"
+    },
+    "addproject": {
+      "button": "Submit challenge",
+      "dialogTitle": "New project",
+      "dialogContent": "To create a new project you just have to choose the type of image you want to see, add the title, the link where you have your saved project and description.",
+      "recomendation1": "We recommend you",
+      "recomendation2": "to give colour to your projects. You can find amazing free pictures",
+      "projectTitle": "Project title",
+      "projectDescription": "Project description",
+      "projectImage": "Image link",
+      "projectLink": "Project link",
+      "close": "Cancel",
+      "save": "Save"
+    },
+    "drawer": {
+      "dashboard": "Dashboard",
+      "preview": "Preview",
+      "profile": "Profile",
+      "experience": "Profesional exp.",
+      "learn": "Level up",
+      "leagues": "Leagues",
+      "contact": "Contact",
+      "survey": "Liking pportfol.io?",
+      "main": "Landing page",
+      "config": "Configuration"
+    },
+    "tutorial": {
+      "dialogTitle": "First steps at Pportfolio",
+      "step1": "Define your personal url",
+      "step2": "Fill your personal info ",
+      "step3": "Add your first project",
+      "step4": "Share your Pportfolio",
+      "urlTitle": "Define url",
+      "contextURL": "Here you can customize how you want your public url to look. Before changing it, keep in mind that the initial you defined will be free.",
+      "case1": "In the side panel you will find a tab that takes you to the configuration of your profile there you can edit all your personal data.",
+      "case2": "On any of the screens you will see a button at the bottom right that allows you to create projects. Clicking on add project will open a popup with all the instructions. To see the projects, delete them or edit them you just have to go to your projects panel (dashboard) which you can access using the sidebar.",
+      "default": "Pportfol.io",
+      "backButton": "Go back",
+      "nextButton": "Next one",
+      "finalOne": "Finish",
+      "finishInfo": "Everyhing done! Enjoy your creating your Pportfolio!",
+      "redoButton": "Start again"
+    },
+    "home": {
+      "league": "League",
+      "level": "Level",
+      "score": "Score",
+      "weeklyChallenge": "Weekly Challenge",
+      "feedback": "Feedback",
+      "feedbackProject": "Give feedback",
+      "feedbackProject_descp": "Rate community projects and receive extra points in return",
+      "feedbackToMyProjects": "Feedback of my projects",
+      "feedbackToMyProjects_descp": "Learn from your mistakes thanks to community feedback",
+      "myProjects": "My projects",
+      "myProjects_descp": "Review and update your projects, description, etc",
+      "deadline": "Deadline"
+    },
+    "leagues" : {
+      "level": "Level",
+      "yourScore" : "Your Score",
+      "leaderScore" : "Leader Score"
+    }
+  },
+  "infocard": {
+    "tooltip": {
+      "title": "View profile"
+    },
+    "button": {
+      "viewproject": "View project",
+      "description": "Description"
+    },
+    "avatar": {
+      "alt": "User"
+    }
+  },
+  "editcard": {
+    "button": {
+      "delete": "Delete",
+      "description": "Description",
+      "premium": "Analytics"
+    }
+  },
+  "changeProperty": {
+    "url": {
+      "placeholder": "example: {{url}}"
+    }
+  },
+  "privacy": {
+    "cookies": {
+      "button": "Accept",
+      "text1": "Use of cookies: We use our own and third party cookies ",
+      "text2": "to improve our services by analyzing your navigation ",
+      "text3": "habits. If you go on surfing, we will consider you're accepting its use.",
+      "text4": ""
+    },
+    "policy": {
+      "text": "",
+      "checkboxText": "I have read and accept the privacy policies",
+      "notChecked": "In order to create an account you must first accept the terms and conditions of use."
+    }
+  },
+  "dialog": {
+    "buttons": {
+      "close": "Close"
+    }
+  },
+  "copy": {
+    "buttons": {
+      "url": "Copy url"
+    }
+  }
+}
