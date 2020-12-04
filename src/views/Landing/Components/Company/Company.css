@@ -5,6 +5,7 @@
     height: 370vh;
     background-color: white;
 }
+
 .company_footer {
     background-image: url("./Assets/fondo_cierre.png");
     background-size: cover;
@@ -49,4 +50,36 @@
     position: absolute;
     margin-top: 280px;
     margin-left: 280px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .body_company {
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 330vh;
+    }
+    .company_footer {
+        left: 0;
+        background-size: cover;
+        padding-left: 20%;
+        padding-top: 250px;
+        height: 75%;
+        top: 3600px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .body_company {
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 330vh;
+    }
+    .company_footer {
+        left: 0;
+        background-size: cover;
+        padding-left: 20%;
+        padding-top: 250px;
+        height: 75%;
+        top: 3600px;
+    }
 }

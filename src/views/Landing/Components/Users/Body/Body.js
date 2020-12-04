@@ -44,7 +44,7 @@ export const Body = () => {
                 por equipos. El objetivo es conseguir los mejores resultados para obtener así una oferta de empleo.
             </p>
             <Grid container className="body_section">
-                <Grid item lg={5} className="body_section_left">
+                <Grid item lg={5} xs={12} className="body_section_left">
                     <p className="body_section_title">Fórmate</p>
                     <p className="body_section_subtitle">Conviértete en un profesional con nuestros cursos </p>
                     <p className="body_section_text">Explora los diferentes cursos que hemos diseñado
@@ -52,15 +52,15 @@ export const Body = () => {
                     que quieres ser.</p>
                     <ButtonRegister />
                 </Grid>
-                <Grid item lg={7}>
+                <Grid item lg={7} xs={12}>
                     <img src={img_formate} className="body_img" alt="fórmate" />
                 </Grid>
             </Grid>
             <Grid container className="body_section">
-                <Grid item lg={7}>
+                <Grid item lg={7} xs={12}>
                     <img src={img_compite} className="body_img" alt="fórmate" />
                 </Grid>
-                <Grid item lg={5} className="body_section_rigth">
+                <Grid item lg={5} xs={12} className="body_section_rigth">
                     <p className="body_section_title">Compite</p>
                     <p className="body_section_subtitle">Compite contra otros usuarios </p>
                     <p className="body_section_text">Compite contra otros usuarios resolviendo pruebas individuales y por equipos que son de gran interés para las empresas.</p>
@@ -68,21 +68,21 @@ export const Body = () => {
                 </Grid>
             </Grid>
             <Grid container className="body_section">
-                <Grid item lg={5} className="body_section_left">
+                <Grid item lg={5} xs={12} className="body_section_left">
                     <p className="body_section_title">Escala posiciones</p>
                     <p className="body_section_subtitle">Escala posiciones en el ranking </p>
                     <p className="body_section_text">Los usuarios con mejores resultados obtienen mejores puntuaciones y escalan más posiciones en el ranking. </p>
                     <ButtonRegister />
                 </Grid>
-                <Grid item lg={7}>
+                <Grid item lg={7} xs={12}>
                     <img src={ranking} className="body_img" alt="fórmate" />
                 </Grid>
             </Grid>
             <Grid container className="body_section">
-                <Grid item lg={7}>
+                <Grid item lg={7} xs={12}>
                     <img src={img_diviertete} className="body_img" alt="fórmate" />
                 </Grid>
-                <Grid item lg={5} className="body_section_rigth">
+                <Grid item lg={5} xs={12} className="body_section_rigth">
                     <p className="body_section_title">Diviértete</p>
                     <p className="body_section_subtitle">Diviértete con nuestro sistema de contratación </p>
                     <p className="body_section_text">Descubre una nueva forma de contratación mucho más transparente y diseñada especialmente para que los procesos sean lo más interactivos posibles.</p>
@@ -104,14 +104,14 @@ export const Body = () => {
                 ¿Cómo funciona?
             </h3>
             <Grid container className="body_how">
-                <Grid item lg={4}>
+                <Grid item lg={4} sm={4} md={4}>
                     <CardHow color="card_how_header_blue" icon={paso1} title="Regístrate" descpription="Si quieres participar en los próximos eventos regístrate y nosotros nos pondremos en contacto contigo." />
                 </Grid>
-                <Grid item lg={4} >
+                <Grid item lg={4} sm={4} md={4} >
                     <CardHow color="card_how_header_red" icon={paso2} title="Kick-off" descpription="Antes de empezar organizaremos una reunión para aclarar cuál será el timeline del evento." />
 
                 </Grid>
-                <Grid item lg={4}>
+                <Grid item lg={4} sm={4} md={4}>
                     <CardHow color="card_how_header_orange" icon={paso3} title="A competir" descpription="Compite, trabaja en equipo y esfuérzate para conseguir una oferta de empleo en una gran empresa." />
 
                 </Grid>

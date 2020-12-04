@@ -38,13 +38,13 @@ export const Company = () => {
                 <h3>Encontramos el talento que tu empresa necesita                </h3>
                 <p className="bodyText"> En Pportfolio traemos una nueva forma de contratar para que encuentres a los candidatos perfectos para tu empresa. De esta manera, organizamos eventos semanales donde se validan las habilidades de los usuarios a través de pruebas individuales y por equipos. Las pruebas al estar diseñadas para los requerimientos específicos de tu empresa nos harán dar con los candidatos mejor preparados para ti.</p>
                 <Grid container className="body_section">
-                    <Grid item lg={5} className="body_section_left">
+                    <Grid item lg={5} xs={12} className="body_section_left">
                         <p className="body_section_title">Valida las habilidades</p>
                         <p className="body_section_subtitle">Valida las habilidades de tus nuevas incorporaciones </p>
                         <p className="body_section_text">Gracias a nuestro sistema gamificado los usuarios validan sus habilidades a través de las diferentes pruebas que realizan.</p>
                         <ButtonRegister />
                     </Grid>
-                    <Grid item lg={7}>
+                    <Grid item lg={7} xs={12}>
                         <img src={valida} className="body_img" alt="fórmate" />
                     </Grid>
                 </Grid>
@@ -72,27 +72,23 @@ export const Company = () => {
                 </Grid>
                 <h3>¿Cómo funciona?</h3>
                 <Grid container className="body_how">
-                    <Grid item lg={4}>
+                    <Grid item lg={4} sm={4} md={4}>
                         <CardHow color="card_how_header_blue" icon={paso1} title="Regístrate" descpription="Regístrate y nosotros nos pondremos en contacto contigo con la intención de empezar a planificar los retos y las competiciones." />
                     </Grid>
-                    <Grid item lg={4} >
+                    <Grid item lg={4} sm={4} md={4}>
                         <CardHow color="card_how_header_red" icon={paso2} title="Sesiones" descpription="Una vez hayamos organizado el evento, empezaremos con las sesiones las cuales durarán aproximadamente dos semanas." />
 
                     </Grid>
-                    <Grid item lg={4}>
+                    <Grid item lg={4} sm={4} md={4}>
                         <CardHow color="card_how_header_orange" icon={paso3} title="Resultados" descpription="Al acabar las sesiones reuniremos todos los datos de los mejores candidatos y crearemos analíticas." />
 
                     </Grid>
                 </Grid>
-                <h3>
-                    Empieza ahora y deja de contratar a ciegas
-                </h3>
-                <h4>
-                    EL PRIMER EVENTO TE SALE TOTALMENTE GRATIS
-                </h4>
-                <h4>
-                    Ponte en contacto con nosotros para saber más.
-                </h4>
+
+                <h3> Empieza ahora y deja de contratar a ciegas </h3>
+                <h4> EL PRIMER EVENTO TE SALE TOTALMENTE GRATIS </h4>
+                <h5> Ponte en contacto con nosotros para saber más.</h5>
+
                 <div className="company_footer">
                     <h1>¿Preparado para unirte a nuestra comunidad?</h1>
                     <h3>Únete a la comunidad Pportfolio y deja de contratar a ciegas.</h3>
