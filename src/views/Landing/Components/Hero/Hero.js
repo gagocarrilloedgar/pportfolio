@@ -16,7 +16,7 @@ export const Hero = () => {
             setTitle("SOY EMPRESA");
             setHeader("Tú pones el talento, nosotros las ofertas de empleo");
         }
-    }, []);
+    }, [lastSegment]);
 
     const handleChange = () => {
         if (lastSegment === "business") {
@@ -45,7 +45,7 @@ export const Hero = () => {
                     </form>
                 </div>
                 <div className="userType">
-                    <p>{" ESPERA UN MOMENTO"}</p>
+                    <p >{" ESPERA UN MOMENTO"}</p>
                     <button className="buttonMain" onClick={handleChange}>
                         {title}
                     </button>

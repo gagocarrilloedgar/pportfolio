@@ -1,0 +1,47 @@
+.card_how {
+    margin: 10px;
+    width: 75%;
+    height: 400px;
+    border-radius: 5px;
+    background-color: white;
+    -webkit-box-shadow: 0px 4px 58px 24px rgba(245, 245, 245, 1);
+    -moz-box-shadow: 0px 4px 58px 24px rgba(245, 245, 245, 1);
+    box-shadow: 0px 4px 58px 24px rgba(245, 245, 245, 1);
+}
+
+.card_how_header_blue {
+    border-radius: 5px 5px 0px 0px;
+    height: 20px;
+    background-color: #2255ff;
+}
+
+.card_how_header_orange {
+    border-radius: 5px 5px 0px 0px;
+    height: 20px;
+    background-color: #FF9811;
+}
+
+.card_how_header_red {
+    border-radius: 5px 5px 0px 0px;
+    height: 20px;
+    background-color: #F8664F;
+}
+
+.icon_how {
+    width: 20%;
+    margin: 40px;
+}
+
+.title_how {
+    font-size: 20px;
+    color: #333333;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.description_how {
+    font-weight: 300;
+    font-size: 18px;
+    padding: 5px 20px;
+}

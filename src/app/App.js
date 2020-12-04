@@ -10,6 +10,7 @@ export function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline>
           <Switch>
+            <Route path="/index" component={Landing} />
             <Route path="/" component={Landing} />
           </Switch>
         </CssBaseline>
