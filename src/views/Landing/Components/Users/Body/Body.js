@@ -15,7 +15,7 @@ import sponsors from "assets/entidades.png"
 import { CardHow } from 'views/Landing/Common/Cards/CardHow';
 import { SocialIcons } from 'views/Landing/Common/SocialIcons/SocialIcons';
 import { ButtonContained, ButtonOutlined } from 'common';
-
+import "views/Landing/Landing.css"
 
 const actionRegister = () => {
     window.location = "/"
@@ -43,67 +43,67 @@ export const Body = () => {
                 En estas sesiones se ponen a disposición de los usuarios una serie de pruebas individuales y
                 por equipos. El objetivo es conseguir los mejores resultados para obtener así una oferta de empleo.
             </p>
-            <Grid container className="user_section">
-                <Grid item lg={5} className="user_section_left">
-                    <p className="user_section_title">Fórmate</p>
-                    <p className="user_section_subtitle">Conviértete en un profesional con nuestros cursos </p>
-                    <p className="user_section_text">Explora los diferentes cursos que hemos diseñado
+            <Grid container className="body_section">
+                <Grid item lg={5} className="body_section_left">
+                    <p className="body_section_title">Fórmate</p>
+                    <p className="body_section_subtitle">Conviértete en un profesional con nuestros cursos </p>
+                    <p className="body_section_text">Explora los diferentes cursos que hemos diseñado
                     y seleccionado para que te conviertasen el desarrollador
                     que quieres ser.</p>
                     <ButtonRegister />
                 </Grid>
                 <Grid item lg={7}>
-                    <img src={img_formate} className="img_users" alt="fórmate" />
+                    <img src={img_formate} className="body_img" alt="fórmate" />
                 </Grid>
             </Grid>
-            <Grid container className="user_section">
+            <Grid container className="body_section">
                 <Grid item lg={7}>
-                    <img src={img_compite} className="img_users" alt="fórmate" />
+                    <img src={img_compite} className="body_img" alt="fórmate" />
                 </Grid>
-                <Grid item lg={5} className="user_section_rigth">
-                    <p className="user_section_title">Compite</p>
-                    <p className="user_section_subtitle">Compite contra otros usuarios </p>
-                    <p className="user_section_text">Compite contra otros usuarios resolviendo pruebas individuales y por equipos que son de gran interés para las empresas.</p>
+                <Grid item lg={5} className="body_section_rigth">
+                    <p className="body_section_title">Compite</p>
+                    <p className="body_section_subtitle">Compite contra otros usuarios </p>
+                    <p className="body_section_text">Compite contra otros usuarios resolviendo pruebas individuales y por equipos que son de gran interés para las empresas.</p>
                     <ButtonRegister />
                 </Grid>
             </Grid>
-            <Grid container className="user_section">
-                <Grid item lg={5} className="user_section_left">
-                    <p className="user_section_title">Escala posiciones</p>
-                    <p className="user_section_subtitle">Escala posiciones en el ranking </p>
-                    <p className="user_section_text">Los usuarios con mejores resultados obtienen mejores puntuaciones y escalan más posiciones en el ranking. </p>
+            <Grid container className="body_section">
+                <Grid item lg={5} className="body_section_left">
+                    <p className="body_section_title">Escala posiciones</p>
+                    <p className="body_section_subtitle">Escala posiciones en el ranking </p>
+                    <p className="body_section_text">Los usuarios con mejores resultados obtienen mejores puntuaciones y escalan más posiciones en el ranking. </p>
                     <ButtonRegister />
                 </Grid>
                 <Grid item lg={7}>
-                    <img src={ranking} className="img_users" alt="fórmate" />
+                    <img src={ranking} className="body_img" alt="fórmate" />
                 </Grid>
             </Grid>
-            <Grid container className="user_section">
+            <Grid container className="body_section">
                 <Grid item lg={7}>
-                    <img src={img_diviertete} className="img_users" alt="fórmate" />
+                    <img src={img_diviertete} className="body_img" alt="fórmate" />
                 </Grid>
-                <Grid item lg={5} className="user_section_rigth">
-                    <p className="user_section_title">Diviértete</p>
-                    <p className="user_section_subtitle">Diviértete con nuestro sistema de contratación </p>
-                    <p className="user_section_text">Descubre una nueva forma de contratación mucho más transparente y diseñada especialmente para que los procesos sean lo más interactivos posibles.</p>
+                <Grid item lg={5} className="body_section_rigth">
+                    <p className="body_section_title">Diviértete</p>
+                    <p className="body_section_subtitle">Diviértete con nuestro sistema de contratación </p>
+                    <p className="body_section_text">Descubre una nueva forma de contratación mucho más transparente y diseñada especialmente para que los procesos sean lo más interactivos posibles.</p>
                     <ButtonRegister />
                 </Grid>
             </Grid>
-            <Grid container className="user_section">
-                <Grid item lg={5} className="user_section_left">
-                    <p className="user_section_title">Encuentra trabajo en una empresa TOP del sector</p>
-                    <p className="user_section_subtitle">Escala posiciones en el ranking </p>
-                    <p className="user_section_text">Los usuarios mejor posicionados en el ranking del evento obtendrán una oferta de trabajo. </p>
+            <Grid container className="body_section">
+                <Grid item lg={5} className="body_section_left">
+                    <p className="body_section_title">Encuentra trabajo en una empresa TOP del sector</p>
+                    <p className="body_section_subtitle">Escala posiciones en el ranking </p>
+                    <p className="body_section_text">Los usuarios mejor posicionados en el ranking del evento obtendrán una oferta de trabajo. </p>
                     <ButtonRegister />
                 </Grid>
                 <Grid item lg={7}>
-                    <img src={img_encuentra} className="img_users" alt="fórmate" />
+                    <img src={img_encuentra} className="body_img" alt="fórmate" />
                 </Grid>
             </Grid>
             <h3>
                 ¿Cómo funciona?
             </h3>
-            <Grid container className="user_how">
+            <Grid container className="body_how">
                 <Grid item lg={4}>
                     <CardHow color="card_how_header_blue" icon={paso1} title="Regístrate" descpription="Si quieres participar en los próximos eventos regístrate y nosotros nos pondremos en contacto contigo." />
                 </Grid>
@@ -141,18 +141,12 @@ export const Body = () => {
                 </div>
             </div>
             <div className="user_entidades">
-                <h3>
-                    Entidades que colaboran con Pportfolio
-            </h3>
+                <h3>Entidades que colaboran con Pportfolio</h3>
                 <img alt="entidades" src={sponsors} />
             </div>
             <div className="user_footer">
-                <h1>
-                    ¿Preparado para unirte a nuestra comunidad?
-                </h1>
-                <h3>
-                    Únete a cientos de usuarios y encuentra oportunidades a la altura de tu talento.
-                </h3>
+                <h1>¿Preparado para unirte a nuestra comunidad?</h1>
+                <h3>Únete a cientos de usuarios y encuentra oportunidades a la altura de tu talento.</h3>
                 <div className="user_icons">
                     <SocialIcons />
                 </div>

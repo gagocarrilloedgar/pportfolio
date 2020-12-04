@@ -1,8 +1,9 @@
-import MainNav from "common/MainNav/MainNav";
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import { Users } from "./Components"
+import { Users, Company } from "./Components"
 import { LandingNav } from "./Components/LandingNav/LandingNav";
+
+
 
 export const Landing = () => {
 
@@ -10,6 +11,7 @@ export const Landing = () => {
         <React.Fragment>
             <LandingNav />
             <Switch>
+                <Route path="/index/business" component={Company} />
                 <Route path="/index" component={Users} />
                 <Route path="/" component={Users} />
             </Switch>
