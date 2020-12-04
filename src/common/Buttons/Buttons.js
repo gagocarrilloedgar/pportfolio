@@ -1,9 +1,18 @@
 import React from 'react'
+import "./Buttons.css"
 
-export const ButtonLandingOutlined = () => {
+export const ButtonOutlined = ({ title, action, color }) => {
     return (
-        <div>
+        <button className={"button outlined " + color} onClick={action}>
+            {title}
+        </button>
+    )
+}
 
-        </div>
+export const ButtonContained = ({ title, action, color }) => {
+    return (
+        <button className={"button contained " + color} onClick={action}>
+            {title}
+        </button>
     )
 }

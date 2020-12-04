@@ -14,7 +14,20 @@ import paso3 from "assets/icono_paso_3.png"
 import sponsors from "assets/entidades.png"
 import { CardHow } from 'views/Landing/Common/Cards/CardHow';
 import { SocialIcons } from 'views/Landing/Common/SocialIcons/SocialIcons';
+import { ButtonContained, ButtonOutlined } from 'common';
 
+
+const actionRegister = () => {
+    window.location = "/"
+}
+
+
+const ButtonRegister = () => {
+
+    return (
+        <ButtonContained title="Registrarme" action={actionRegister} color="blue" />
+    );
+}
 
 export const Body = () => {
     return (
@@ -37,6 +50,7 @@ export const Body = () => {
                     <p className="user_section_text">Explora los diferentes cursos que hemos diseñado
                     y seleccionado para que te conviertasen el desarrollador
                     que quieres ser.</p>
+                    <ButtonRegister />
                 </Grid>
                 <Grid item lg={7}>
                     <img src={img_formate} className="img_users" alt="fórmate" />
@@ -50,6 +64,7 @@ export const Body = () => {
                     <p className="user_section_title">Compite</p>
                     <p className="user_section_subtitle">Compite contra otros usuarios </p>
                     <p className="user_section_text">Compite contra otros usuarios resolviendo pruebas individuales y por equipos que son de gran interés para las empresas.</p>
+                    <ButtonRegister />
                 </Grid>
             </Grid>
             <Grid container className="user_section">
@@ -57,6 +72,7 @@ export const Body = () => {
                     <p className="user_section_title">Escala posiciones</p>
                     <p className="user_section_subtitle">Escala posiciones en el ranking </p>
                     <p className="user_section_text">Los usuarios con mejores resultados obtienen mejores puntuaciones y escalan más posiciones en el ranking. </p>
+                    <ButtonRegister />
                 </Grid>
                 <Grid item lg={7}>
                     <img src={ranking} className="img_users" alt="fórmate" />
@@ -70,6 +86,7 @@ export const Body = () => {
                     <p className="user_section_title">Diviértete</p>
                     <p className="user_section_subtitle">Diviértete con nuestro sistema de contratación </p>
                     <p className="user_section_text">Descubre una nueva forma de contratación mucho más transparente y diseñada especialmente para que los procesos sean lo más interactivos posibles.</p>
+                    <ButtonRegister />
                 </Grid>
             </Grid>
             <Grid container className="user_section">
@@ -77,6 +94,7 @@ export const Body = () => {
                     <p className="user_section_title">Encuentra trabajo en una empresa TOP del sector</p>
                     <p className="user_section_subtitle">Escala posiciones en el ranking </p>
                     <p className="user_section_text">Los usuarios mejor posicionados en el ranking del evento obtendrán una oferta de trabajo. </p>
+                    <ButtonRegister />
                 </Grid>
                 <Grid item lg={7}>
                     <img src={img_encuentra} className="img_users" alt="fórmate" />
@@ -137,6 +155,9 @@ export const Body = () => {
                 </h3>
                 <div className="user_icons">
                     <SocialIcons />
+                </div>
+                <div class="user_register">
+                    <ButtonOutlined title="Registrarme" action={actionRegister} color="white" />
                 </div>
             </div>
         </div>

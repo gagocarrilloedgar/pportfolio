@@ -82,7 +82,7 @@ h3 {
     width: 92px;
     height: 78px;
     left: 230px;
-    top: 270px;
+    top: 380px;
     opacity: 0.5;
 }
 
@@ -91,7 +91,7 @@ h3 {
     width: 504px;
     height: 100px;
     left: 250px;
-    top: 250px;
+    top: 350px;
     font-style: normal;
     font-weight: bold;
     font-size: 45px;
@@ -212,6 +212,12 @@ h3 {
 
 .user_icons {
     position: absolute;
-    margin-top: 300px;
-    margin-left: 260px;
+    margin-top: 350px;
+    margin-left: 270px;
+}
+
+.user_register {
+    position: absolute;
+    margin-top: 280px;
+    margin-left: 280px;
 }
