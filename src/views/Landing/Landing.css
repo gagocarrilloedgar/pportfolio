@@ -179,7 +179,7 @@ h3 {
     .body_img_mobile {
         display: block;
         margin-top: 40px;
-        margin-left: 10px;
+        margin-left: 1@0px;
         width: 85%;
     }
     .body_img.rigth {

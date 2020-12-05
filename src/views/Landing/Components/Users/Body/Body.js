@@ -17,6 +17,7 @@ import { SocialIcons } from 'views/Landing/Common/SocialIcons/SocialIcons';
 import { ButtonContained, ButtonOutlined } from 'common';
 import "views/Landing/Landing.css"
 
+
 const actionRegister = () => {
     window.location = "/"
 }
@@ -28,6 +29,7 @@ const ButtonRegister = () => {
         <ButtonContained title="Registrarme" action={actionRegister} color="blue" />
     );
 }
+
 
 export const Body = () => {
     return (

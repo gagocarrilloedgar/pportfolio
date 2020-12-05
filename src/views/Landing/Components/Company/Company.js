@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Hero } from '../Hero';
 import "./Company.css";
 import { ButtonContained, ButtonOutlined } from "common";

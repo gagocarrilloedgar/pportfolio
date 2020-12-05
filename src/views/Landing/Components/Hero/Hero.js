@@ -1,12 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { Container, Grid } from "@material-ui/core";
 import "./Hero.css";
-import { LandingNav } from "../LandingNav/LandingNav";
+import emailjs, { init } from "emailjs-com";
+
 
 export const Hero = () => {
     const lastSegment = window.location.href.split("/").pop();
     const [title, setTitle] = useState("");
     const [headerTitle, setHeader] = useState("");
+    const [formTemplate, setForm] = useState({
+        subject: "Newsubscriber",
+        email: "",
+    });
+
+    init("user_vGGDJmKkq8tFCVNrdG5HI");
 
     useEffect(() => {
         if (lastSegment === "business") {
@@ -27,6 +34,55 @@ export const Hero = () => {
         }
     }
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        let formParameters = {
+            email: formTemplate.email,
+        };
+
+        emailjs
+            .send(
+                "pportfolio",
+                "user_subs",
+                formParameters,
+                "user_vGGDJmKkq8tFCVNrdG5HI"
+            )
+            .then(
+                (result) => {
+                    console.log(result.text);
+                },
+                (error) => {
+                    console.log(error.text);
+                }
+            );
+        resetForm();
+
+        alert("Hemos recivido tu correo, pronto nos pondremos en contacto contigo");
+        window.location.reload();
+
+
+    };
+
+    const resetForm = () => {
+        setForm({
+            email: "",
+            subject: "Newsubscriber",
+        });
+    };
+
+    const handleChangeEmail = (prop) => (event) => {
+        setForm({
+            ...formTemplate,
+            [prop]: event.target.value,
+        });
+    };
+
+    console.log(formTemplate);
+
+
+
+
+
     return (
 
         <div className="Hero" >
@@ -40,9 +96,9 @@ export const Hero = () => {
                     </h5>
                 </Grid>
                 <div className="inputBox">
-                    <form>
-                        <input type="email" placeholder="Tu correo electrónico va aquí" />
-                        <input type="submit" />
+                    <form submit={handleSubmit}>
+                        <input onChange={handleChangeEmail("email")} type="email" placeholder="Tu correo electrónico va aquí" />
+                        <input type="submit" onClick={handleSubmit} />
                     </form>
                 </div>
                 <div className="userType">
