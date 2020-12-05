@@ -1,16 +1,11 @@
-
 * {
   box-sizing: border-box;
   font-family: Fira, Sans;
 }
 
-#root{
-  width: 100%;
+#root {
+  width: 100vw;
   height: 100%;
   background-color: white;
   text-align: center;
 }
-
-
-
-

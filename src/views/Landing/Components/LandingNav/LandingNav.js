@@ -23,10 +23,10 @@ export const LandingNav = () => {
 
     return (
         <MainNav>
-            <Grid item lg={1} xs={2}>
+            <Grid item lg={1} xs={4}>
                 <p className={scrollDiv ? "navElement active" : "navElement"} onClick={() => window.location = "/index"}> SOY TALENTO</p>
             </Grid>
-            <Grid item lg={1} xs={2}>
+            <Grid item lg={1} xs={4}>
                 <p className={scrollDiv ? "navElement active" : "navElement"} onClick={() => window.location = "/index/business"}> SOY EMPRESA</p>
             </Grid>
         </MainNav>

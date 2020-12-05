@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Container, Grid } from "@material-ui/core";
 import "./Hero.css";
+import { LandingNav } from "../LandingNav/LandingNav";
 
 export const Hero = () => {
     const lastSegment = window.location.href.split("/").pop();

@@ -142,7 +142,7 @@ export const Body = () => {
             </div>
             <div className="user_entidades">
                 <h3>Entidades que colaboran con Pportfolio</h3>
-                <img alt="entidades" src={sponsors} />
+                <img id="sponsors" alt="entidades" src={sponsors} />
             </div>
             <div className="user_footer">
                 <h1>¿Preparado para unirte a nuestra comunidad?</h1>

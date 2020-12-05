@@ -7,7 +7,7 @@ export const CardHow = ({ color, icon, title, descpription }) => {
         <div className="card_how">
             <div className={color}>
             </div>
-            <img src={icon} className="icon_how" />
+            <img src={icon} className="icon_how" alt={title} />
             <p className="title_how" >{title}</p>
             <p className="description_how" >{descpription}</p>
         </div>

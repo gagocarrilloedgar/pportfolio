@@ -1,9 +1,10 @@
 .body {
     padding-left: 100px;
     padding-right: 100px;
-    overflow-x: hidden;
     height: 580vh;
+    width: 100vw;
     background-color: white;
+    overflow: hidden;
 }
 
 .section_who {
@@ -163,6 +164,7 @@
         padding-left: 10px;
         padding-right: 10px;
         height: 540vh;
+        width: 100vw;
     }
     .section_who {
         position: absolute;
@@ -170,11 +172,9 @@
         left: -50px;
         top: 5793px;
     }
-
     .user_entidades {
         top: 5000px;
     }
-
     .user_footer {
         top: 5600px;
         left: 0;
@@ -214,34 +214,32 @@
 
 @media only screen and (max-width: 600px) {
     .body {
-        padding-left: 2px;
-        padding-right: 2px;
         height: 740vh;
+        width: 100vw;
     }
     .section_who {
-        padding: 0px;
-        left: -200px;
-        top: 4793px;
+        position: absolute;
+        margin: auto;
+        margin-left: -335px;
+        width: 100%;
+        top: 5400px;
     }
-
     .img_who {
         width: 42px;
         height: 38px;
-        left: 230px;
-        top: 380px;
-
+        left: 0px;
+        top: 10px;
     }
-
-    .user_who{
+    .user_who {
         letter-spacing: 0px;
         font-size: 20px;
-        top: 4000px;
-        text-align: left;
+        margin-left: 120px;
+        top: 450px;
+        text-align: center;
     }
-
     .who_user {
         position: absolute;
-        width: 350px;
+        width: 90%;
         height: 360px;
         background: rgba(255, 255, 255, 0.9);
         box-shadow: 0px 4px 50px -3px rgba(34, 85, 255, 0.08), 0px 0px 50px -5px rgba(0, 0, 0, 0.09);
@@ -249,15 +247,15 @@
     }
     .who_user.guille {
         left: 415px;
-        top: 570px;
+        top: 600px;
     }
     .who_user.edgar {
-        left: 800px;
-        top: 380px;
+        left: 415px;
+        top: 1000px;
     }
     .who_user.carlos {
-        left: 800px;
-        top: 770px;
+        left: 415px;
+        top: 1400px;
     }
     .who_user h4 {
         position: relative;
@@ -290,33 +288,31 @@
         font-size: 16px;
     }
     .user_entidades {
-        top: 6000px;
+        top: 7200px;
+        width: 95%;
+    }
+    #sponsors {
+        width: 90%;
+        margin: 40px;
     }
     .user_footer {
-        top: 8600px;
+        top: 7550px;
         left: 0;
         background-size: cover;
-        padding-left: 3%;
+        padding-left: 0%;
         padding-top: 250px;
     }
     .user_footer h1 {
-        position: absolute;
-        text-align: center;
-        font-weight: bold;
-        font-size: 25px;
+        font-size: 22px;
         width: 100%;
-        color: #FFFFFF;
     }
     .user_footer h3 {
-        position: absolute;
-        text-align: center;
         font-weight: 300;
         margin-left: 40px;
         margin-right: 10px;
         margin-top: 140px;
-        font-size: 22px;
+        font-size: 20px;
         width: 80%;
-        color: #FFFFFF;
     }
     .user_icons {
         position: absolute;
@@ -326,6 +322,6 @@
     .user_register {
         position: absolute;
         margin-top: 300px;
-        margin-left: 100px;
+        margin-left: 110px;
     }
 }

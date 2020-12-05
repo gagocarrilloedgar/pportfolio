@@ -72,14 +72,33 @@
     .body_company {
         padding-left: 10px;
         padding-right: 10px;
-        height: 330vh;
+        height: 510vh;
     }
     .company_footer {
-        left: 0;
+        position: absolute;
         background-size: cover;
-        padding-left: 20%;
-        padding-top: 250px;
-        height: 75%;
-        top: 3600px;
+        padding-left: 10%;
+        padding-top: 150px;
+        height: 70%;
+        top: 5250px;
+    }
+    .company_footer h1 {
+        font-size: 30px;
+        width: 80%;
+    }
+    .company_footer h3 {
+        position: absolute;
+        text-align: center;
+        font-weight: 300;
+        margin-top: 180px;
+        font-size: 18px;
+        margin-left: 0px;
+        width: 80%;
+    }
+    .company_icons {
+        margin-left: 70px;
+    }
+    .company_register {
+        margin-left: 80px;
     }
 }
