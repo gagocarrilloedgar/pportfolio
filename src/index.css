@@ -1,11 +1,25 @@
-* {
-  box-sizing: border-box;
-  font-family: Fira, Sans;
-}
+
 
 #root {
   width: 100vw;
   height: 100%;
   background-color: white;
   text-align: center;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  font-family: Fira, Sans;
+}
+
+html {
+  /* this makes sure the padding and the border is included in the box sizing */
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html body {
+  padding: 0;
+  margin: 0;
+  overflow-x: inherit;
 }
