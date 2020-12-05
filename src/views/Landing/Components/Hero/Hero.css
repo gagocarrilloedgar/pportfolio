@@ -115,13 +115,13 @@ input[type="submit"], .buttonMain:hover {
 
 /*MID RESS*/
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1600px) {
   .Hero {
     background-size: cover;
   }
   .Hero h1 {
     font-size: 3.3em;
-    padding-top: 120px;
+    padding-top: 110px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -132,6 +132,7 @@ input[type="submit"], .buttonMain:hover {
   }
   .inputBox {
     left: 25%;
+    margin-top: 20px;
   }
   .userType {
     top: 440px;
