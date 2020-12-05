@@ -58,13 +58,16 @@ export const Body = () => {
             </Grid>
             <Grid container className="body_section">
                 <Grid item lg={7} xs={12}>
-                    <img src={img_compite} className="body_img" alt="fórmate" />
+                    <img src={img_compite} className="body_img rigth" alt="fórmate" />
                 </Grid>
                 <Grid item lg={5} xs={12} className="body_section_rigth">
                     <p className="body_section_title">Compite</p>
                     <p className="body_section_subtitle">Compite contra otros usuarios </p>
                     <p className="body_section_text">Compite contra otros usuarios resolviendo pruebas individuales y por equipos que son de gran interés para las empresas.</p>
                     <ButtonRegister />
+                </Grid>
+                <Grid item lg={7} xs={12}>
+                    <img src={img_compite} className="body_img_mobile" alt="fórmate" />
                 </Grid>
             </Grid>
             <Grid container className="body_section">
@@ -80,13 +83,16 @@ export const Body = () => {
             </Grid>
             <Grid container className="body_section">
                 <Grid item lg={7} xs={12}>
-                    <img src={img_diviertete} className="body_img" alt="fórmate" />
+                    <img src={img_diviertete} className="body_img rigth" alt="fórmate" />
                 </Grid>
                 <Grid item lg={5} xs={12} className="body_section_rigth">
                     <p className="body_section_title">Diviértete</p>
                     <p className="body_section_subtitle">Diviértete con nuestro sistema de contratación </p>
                     <p className="body_section_text">Descubre una nueva forma de contratación mucho más transparente y diseñada especialmente para que los procesos sean lo más interactivos posibles.</p>
                     <ButtonRegister />
+                </Grid>
+                <Grid item lg={7} xs={12}>
+                    <img src={img_diviertete} className="body_img_mobile" alt="fórmate" />
                 </Grid>
             </Grid>
             <Grid container className="body_section">

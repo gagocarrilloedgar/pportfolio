@@ -1,14 +1,11 @@
-
-
 #root {
   width: 100vw;
-  height: 100%;
   background-color: white;
   text-align: center;
 }
 
 *, *::before, *::after {
-  box-sizing: inherit;
+  box-sizing: content-box;
   font-family: Fira, Sans;
 }
 
@@ -18,8 +15,10 @@ html {
   overflow-x: hidden;
 }
 
-html body {
-  padding: 0;
-  margin: 0;
-  overflow-x: inherit;
+@media only screen and (max-width: 600px) {
+  html body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
 }

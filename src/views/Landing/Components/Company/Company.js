@@ -49,24 +49,27 @@ export const Company = () => {
                     </Grid>
                 </Grid>
                 <Grid container className="body_section">
-                    <Grid item lg={7}>
-                        <img src={cargar} className="body_img" alt="fórmate" />
+                    <Grid item lg={7} xs={12}>
+                        <img src={cargar} className="body_img rigth" alt="fórmate" />
                     </Grid>
-                    <Grid item lg={5} className="body_section_rigth">
+                    <Grid item lg={5} xs={12} className="body_section_rigth">
                         <p className="body_section_title">Simplifica y acelera</p>
                         <p className="body_section_subtitle">Simplifica y acelera tus procesos de selección  </p>
                         <p className="body_section_text">Al validarse las aptitudes de los usuarios tus procesos de selección se verán drásticamente simplificados. No es necesaria una búsqueda exhaustiva para encontrar a los candidatos que se cree que son más aptos.</p>
                         <ButtonRegister />
                     </Grid>
+                    <Grid item lg={7} xs={12}>
+                        <img src={cargar} className="body_img_mobile" alt="fórmate" />
+                    </Grid>
                 </Grid>
                 <Grid container className="body_section">
-                    <Grid item lg={5} className="body_section_left">
+                    <Grid item lg={5} xs={12} className="body_section_left">
                         <p className="body_section_title">Reduce costes</p>
                         <p className="body_section_subtitle">Reduce costes con Pportfolio</p>
                         <p className="body_section_text">Los costes totales de contratación se ven gratamente reducidos al disminuir el tiempo de búsqueda de candidatos y aumentar la probabilidad de encontrar a usuarios preparados y que encajan con las necesidades de tu empresa. </p>
                         <ButtonRegister />
                     </Grid>
-                    <Grid item lg={7}>
+                    <Grid item lg={7} xs={12}>
                         <img src={reduce} className="body_img" alt="fórmate" />
                     </Grid>
                 </Grid>
@@ -84,7 +87,6 @@ export const Company = () => {
 
                     </Grid>
                 </Grid>
-
                 <h3> Empieza ahora y deja de contratar a ciegas </h3>
                 <h4> EL PRIMER EVENTO TE SALE TOTALMENTE GRATIS </h4>
                 <h5> Ponte en contacto con nosotros para saber más.</h5>

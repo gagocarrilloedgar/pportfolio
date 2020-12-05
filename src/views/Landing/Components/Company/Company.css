@@ -57,6 +57,7 @@
         padding-left: 10px;
         padding-right: 10px;
         height: 330vh;
+        overflow: hidden;
     }
     .company_footer {
         left: 0;
@@ -68,37 +69,42 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
     .body_company {
-        padding-left: 10px;
-        padding-right: 10px;
-        height: 510vh;
+        padding-left: 0px;
+        padding-right: 0px;
+        height: 550vh;
     }
     .company_footer {
-        position: absolute;
-        background-size: cover;
-        padding-left: 10%;
-        padding-top: 150px;
-        height: 70%;
-        top: 5250px;
+        position: relative;
+        background-color: #2255ff;
+        text-align: center;
+        height: 600px;
+        top: 40px;
     }
     .company_footer h1 {
-        font-size: 30px;
+        font-size: 25px;
+        top: 0px;
+        left: 9%;
         width: 80%;
     }
     .company_footer h3 {
         position: absolute;
         text-align: center;
         font-weight: 300;
-        margin-top: 180px;
-        font-size: 18px;
-        margin-left: 0px;
+        top: -10px;
+        left: 145px;
+        font-size: 15px;
         width: 80%;
     }
     .company_icons {
-        margin-left: 70px;
+        position: absolute;
+        margin-top: 100px;
+        margin-left: -15px;
     }
     .company_register {
-        margin-left: 80px;
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 0px;
     }
 }
