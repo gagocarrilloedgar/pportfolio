@@ -57,7 +57,7 @@ export const Hero = () => {
             );
         resetForm();
 
-        alert("Hemos recivido tu correo, pronto nos pondremos en contacto contigo");
+        alert("Hemos recibido tu correo, pronto nos pondremos en contacto contigo");
         window.location.reload();
 
 
