@@ -26,7 +26,7 @@ const MainNav = (props) => {
             className={scrollDiv ? "bodynav white" : "bodynav"}>
             <Toolbar>
                 <IconButton edge="start">
-                    <img src={logo} width="40px" />
+                    <img src={logo} width="40px" alt="icon" />
                 </IconButton>
 
                 <Grid container justify="flex-end">

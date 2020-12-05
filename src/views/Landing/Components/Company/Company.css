@@ -108,3 +108,25 @@
         margin-left: 0px;
     }
 }
+
+@media only screen and (max-height: 700px) {
+    .body_company {
+        padding-left: 0px;
+        padding-right: 0px;
+        height: 700vh;
+    }
+    h3, h4, h5 {
+        padding: 2px;
+    }
+}
+
+@media only screen and (max-height: 750px) {
+    .body_company {
+        padding-left: 0px;
+        padding-right: 0px;
+        height: 630vh;
+    }
+    h3, h4, h5 {
+        padding: 2px;
+    }
+}

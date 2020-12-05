@@ -112,14 +112,14 @@ export const Body = () => {
                 ¿Cómo funciona?
             </h3>
             <Grid container className="body_how">
-                <Grid item lg={4} sm={4} md={4}>
+                <Grid item lg={4} sm={4} md={4} xs={12}>
                     <CardHow color="card_how_header_blue" icon={paso1} title="Regístrate" descpription="Si quieres participar en los próximos eventos regístrate y nosotros nos pondremos en contacto contigo." />
                 </Grid>
-                <Grid item lg={4} sm={4} md={4} >
+                <Grid item lg={4} sm={4} md={4} xs={12} >
                     <CardHow color="card_how_header_red" icon={paso2} title="Kick-off" descpription="Antes de empezar organizaremos una reunión para aclarar cuál será el timeline del evento." />
 
                 </Grid>
-                <Grid item lg={4} sm={4} md={4}>
+                <Grid item lg={4} sm={4} md={4} xs={12}>
                     <CardHow color="card_how_header_orange" icon={paso3} title="A competir" descpription="Compite, trabaja en equipo y esfuérzate para conseguir una oferta de empleo en una gran empresa." />
 
                 </Grid>

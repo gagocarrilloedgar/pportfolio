@@ -179,7 +179,7 @@ h3 {
     .body_img_mobile {
         display: block;
         margin-top: 40px;
-        margin-left: 1@0px;
+        margin-left: 10px;
         width: 85%;
     }
     .body_img.rigth {
@@ -195,4 +195,8 @@ h3 {
         padding-left: 20px;
         margin-bottom: 100px;
     }
+}
+
+@media only screen and (max-height: 700px) {
+    
 }
