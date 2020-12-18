@@ -1,1 +1,0 @@
-export { CardHow } from "./CardHow"

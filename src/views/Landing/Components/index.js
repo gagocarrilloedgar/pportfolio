@@ -1,3 +1,2 @@
-export { Hero } from "./Hero"
-export { Users } from "./Users"
-export { Company } from "./Company"
+export { Login } from "./Login"
+export { Register} from "./Register"
