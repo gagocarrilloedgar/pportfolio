@@ -12,7 +12,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import { UserContext } from 'hooks';
 import { GoogleLogIn } from 'common/GoogleLogIn';
-import Copyright from '../Copyright';
+import {Copyright} from 'common';
 
 
 
@@ -74,7 +74,7 @@ export default function Register() {
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
-            Sign in
+            Crear cuenta
           </Typography>
           <form className={classes.form} validate onSubmit={onSubmit}>
             <TextField

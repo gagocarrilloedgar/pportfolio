@@ -1,0 +1,1 @@
+export {EventosCard} from "./Eventos"

@@ -14,7 +14,7 @@ import { UserContext } from 'hooks';
 import { getJWT, localSDB, navigation } from 'utils';
 import { useEffect } from 'react';
 import { GoogleLogIn } from 'common/GoogleLogIn';
-import Copyright from '../Copyright';
+import {Copyright} from 'common';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -64,6 +64,12 @@ export default function Login() {
         login(user);
     };
 
+    useEffect(()=>{
+        if (getJWT(localSDB.token)){
+            toApp();
+        }
+    },[]);
+
 
     return (
         <Grid container component="main" className={classes.root}>
@@ -75,7 +81,7 @@ export default function Login() {
                         <LockOutlinedIcon />
                     </Avatar>
                     <Typography component="h1" variant="h5">
-                        Sign in
+                       ¡Hola otra vez!
           </Typography>
                     <form className={classes.form} validate onSubmit={onSubmit}>
                         <TextField
