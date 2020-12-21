@@ -1,30 +1,23 @@
 const baseURL = process.env.REACT_APP_BASE_URL;
 
+const challengeBase = baseURL + "/challenges/";
+const eventBase = baseURL + "/events/";
+
 const routerMain = {
   projectRouter: {
     addProject: baseURL + "/projects/add",
     uptadeProject: baseURL + "/projects/update/",
+    getProjectsByTag: baseURL + "/projects/getBytags",
+    getByUserchallengeId: baseURL + "/projects/getByUserchallengeId/",
+    getBychallengeId: baseURL + "/projects/getBychallengeId",
+    getByCompanyId: baseURL + "/projects/getByCompanyId",
+    getByCompanyChallengeId: baseURL + "/projects/getBychallengeId/",
+    getByCompanyEventId: baseURL + "/projects/getByCompanyEventId/",
     findProjects: baseURL + "/projects/findAll",
     findProject: baseURL + "/projects/",
     findProjectByUserId: baseURL + "/projects/findBy/",
     deleteProject: baseURL + "/projects/delete/",
-    getProjectsByTag: baseURL + "/projects/getBytags",
-  },
 
-  reviewsRouter: {
-    addReview: baseURL + "/reviews/add",
-    updateReview: baseURL + "/reviews/update/",
-    findReview: baseURL + "/reviews/",
-    findReviewByUserId: baseURL + "/reviews/findBy/",
-    deleteProject: baseURL + "/reviews/delete/",
-  },
-
-  experienceRouter: {
-    addExperience: baseURL + "/experiences/add",
-    uptadeExperience: baseURL + "/experiences/update/",
-    findExperience: baseURL + "/experiences/",
-    findExperienceByUserId: baseURL + "/experiences/findBy/",
-    deleteExperience: baseURL + "/experiences/delete/",
   },
 
   studiesRouter: {
@@ -46,6 +39,10 @@ const routerMain = {
     googleLogin: baseURL + "/users/google/login",
     getAllUsersByIds: baseURL + "/users/findAllById",
     updateURL: baseURL + "/users/updatePersonalURL/",
+    updateSkills: baseURL + "/users/updateSkills",
+    updatehardlevel: baseURL + "/users/updatehardlevel",
+    updatesoftlevel: baseURL + "/users/updatesoftlevel",
+    updatePassword: baseURL + "/users/updatePassword"
   },
 
   companyRouter: {
@@ -55,8 +52,8 @@ const routerMain = {
     update: baseURL + "/companies/update/",
     getCompaniesByIds: baseURL + "/companies/findAllById",
     updateCompanyURL: baseURL + "/companies/updateurl/",
-    updateEventUsers: baseURL + "/companies/updateEventUsers",
-    updateLeaderBoard: baseURL + "/companies/updateLeaderBoard",
+    updatePassword: baseURL + "/companies/updatePassword",
+    resetPassword: baseURL + "/companies/resetPassword",
     findAll: baseURL + "/companies/findAll",
     logout: baseURL + "/companies/logout",
     findById: baseURL + "/companies/",
@@ -74,6 +71,27 @@ const routerMain = {
     getResourceByPPType: baseURL + "/resources/findByPPType/",
     getResourceByLang: baseURL + "/resources/findByLang/",
     deleteResource: baseURL + "/resources/delete/",
+  },
+
+  mailerRouter: {
+    welcome: baseURL + "/mailer/welcome",
+  },
+
+
+  challengeRouter: {
+    add: challengeBase + "add",
+    update: challengeBase + "update/",
+    findById: challengeBase,
+    findAll: challengeBase + "findAll",
+    delete: challengeBase + "delete("
+  },
+
+  eventRouter: {
+    add: eventBase + "add",
+    update: eventBase + "update/",
+    findById: eventBase,
+    findAll: eventBase + "findAll",
+    delete: eventBase + "delete("
   }
 
 };

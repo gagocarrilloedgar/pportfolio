@@ -1,4 +1,4 @@
-import React, {useState,useContext} from 'react';
+import React, { useState, useContext } from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -9,49 +9,23 @@ import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
-import { UserContext } from 'hooks';
+import { CompanyContext, UserContext } from 'hooks';
 import { GoogleLogIn } from 'common/GoogleLogIn';
-import {Copyright} from 'common';
+import { Copyright } from 'common';
+import useStyles from "./style"
+import { useEffect } from 'react';
 
-
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    height: '100vh',
-  },
-  image: {
-    backgroundImage: 'url(https://source.unsplash.com/1600x900/?abstract)',
-    backgroundRepeat: 'no-repeat',
-    backgroundColor:
-      theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[900],
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-  },
-  paper: {
-    margin: theme.spacing(8, 4),
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-  },
-  avatar: {
-    margin: theme.spacing(1),
-    backgroundColor: theme.palette.primary.main,
-  },
-  form: {
-    width: '100%', // Fix IE 11 issue.
-    marginTop: theme.spacing(1),
-  },
-  submit: {
-    margin: theme.spacing(3, 0, 2),
-  },
-}));
 
 export default function Register() {
   const classes = useStyles();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const { register } = useContext(UserContext);
+  const [buttonChange, setBChange] = useState("Ir al registro para empresas");
+
+  const { bregister } = useContext(CompanyContext);
+
+  const lastSegment = window.location.href.split("/").pop()
 
   const onSubmit = async (e) => {
     e.preventDefault();
@@ -59,10 +33,33 @@ export default function Register() {
       username: email,
       password: password,
       email: email,
-      preonsalURL: "",
     };
-    await register(user);
+
+    if (lastSegment === "company") {
+      await bregister(user);
+    } else {
+      await register(user);
+    }
+
   };
+
+  useEffect(() => {
+
+    if (lastSegment === "company") {
+      setBChange("Ir al registro para usuarios")
+    } else {
+      setBChange("Ir al registro para empresas")
+    }
+
+  }, [lastSegment]);
+
+  const changeWindow = () => {
+    if (lastSegment === "company") {
+      window.location = "/register";
+    } else {
+      window.location = "/register/company";
+    }
+  }
 
   return (
     <Grid container component="main" className={classes.root}>
@@ -118,11 +115,19 @@ export default function Register() {
                   {"¿Ya tienes cuenta? Inicia sesión aquí"}
                 </Link>
               </Grid>
+
             </Grid>
-            <GoogleLogIn/>
+            <GoogleLogIn tag={lastSegment} />
             <Box mt={5}>
-             <Copyright/>
+              <Copyright />
             </Box>
+            {/*<Box mt={3}>
+              <Grid item>
+                <Button variant="outlined" color="primary" onClick={changeWindow}>
+                  {buttonChange}
+                </Button>
+              </Grid>
+  </Box>*/}
           </form>
         </div>
       </Grid>

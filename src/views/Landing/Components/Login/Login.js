@@ -9,43 +9,13 @@ import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
-import { UserContext } from 'hooks';
+import { CompanyContext, UserContext } from 'hooks';
 import { getJWT, localSDB, navigation } from 'utils';
 import { useEffect } from 'react';
 import { GoogleLogIn } from 'common/GoogleLogIn';
-import {Copyright} from 'common';
+import { Copyright } from 'common';
+import useStyles from "./style"
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-        height: '100vh',
-    },
-    image: {
-        backgroundImage: 'url(https://source.unsplash.com/1600x900/?abstract)',
-        backgroundRepeat: 'no-repeat',
-        backgroundColor:
-            theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[900],
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-    },
-    paper: {
-        margin: theme.spacing(8, 4),
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-    },
-    avatar: {
-        margin: theme.spacing(1),
-        backgroundColor: theme.palette.primary.main,
-    },
-    form: {
-        width: '100%', // Fix IE 11 issue.
-        marginTop: theme.spacing(1),
-    },
-    submit: {
-        margin: theme.spacing(3, 0, 2),
-    },
-}));
 
 export default function Login() {
     const classes = useStyles();
@@ -53,6 +23,10 @@ export default function Login() {
     const [password, setPassword] = useState("");
     const { login } = useContext(UserContext);
     const { toApp } = navigation();
+    const [buttonChange, setBChange] = useState("Iniciar sesión empresa");
+    const { blogin } = useContext(CompanyContext);
+    const lastSegment = window.location.href.split("/").pop()
+
 
     const onSubmit = async (e) => {
         e.preventDefault();
@@ -61,14 +35,32 @@ export default function Login() {
             password: password,
         };
 
-        login(user);
+        if (lastSegment === "company") {
+            await blogin(user);
+        } else {
+            await login(user);
+        }
     };
 
-    useEffect(()=>{
-        if (getJWT(localSDB.token)){
+    useEffect(() => {
+        if (getJWT(localSDB.token)) {
             toApp();
         }
-    },[]);
+
+        if (lastSegment === "company") {
+            setBChange("Iniciar sesión como usuario")
+        } else {
+            setBChange("Iniciar sesión empresa")
+        }
+    }, [lastSegment]);
+
+    const changeWindow = () => {
+        if (lastSegment === "company") {
+            window.location = "/login";
+        } else {
+            window.location = "/login/company";
+        }
+    }
 
 
     return (
@@ -81,7 +73,7 @@ export default function Login() {
                         <LockOutlinedIcon />
                     </Avatar>
                     <Typography component="h1" variant="h5">
-                       ¡Hola otra vez!
+                        ¡Hola otra vez!
           </Typography>
                     <form className={classes.form} validate onSubmit={onSubmit}>
                         <TextField
@@ -125,10 +117,17 @@ export default function Login() {
                                 </Link>
                             </Grid>
                         </Grid>
-                        <GoogleLogIn />
+                        <GoogleLogIn tag={lastSegment} />
                         <Box mt={5}>
                             <Copyright />
                         </Box>
+                        {/*<Box mt={3}>
+                            <Grid item>
+                                <Button variant="outlined" color="primary" onClick={changeWindow}>
+                                    {buttonChange}
+                                </Button>
+                            </Grid>
+    </Box>*/}
                     </form>
                 </div>
             </Grid>

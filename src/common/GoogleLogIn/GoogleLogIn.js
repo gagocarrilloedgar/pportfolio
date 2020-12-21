@@ -1,12 +1,21 @@
 import React, { useContext } from "react";
 import { GoogleLogin } from "react-google-login";
-import { UserContext } from "hooks";
+import { CompanyContext, UserContext } from "hooks";
 
-export const GoogleLogIn = () => {
+export const GoogleLogIn = ({ tag }) => {
   const { googleLogin } = useContext(UserContext);
+  const { bgoogleLogin } = useContext(CompanyContext);
 
   const responseGoogle = (response) => {
-    googleLogin(response, 1);
+
+    if (tag === "company") {
+      bgoogleLogin(response, 1)
+
+    } else {
+      googleLogin(response, 1);
+    }
+
+
   };
 
   return (
