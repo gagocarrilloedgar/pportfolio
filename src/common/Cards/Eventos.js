@@ -18,12 +18,12 @@ export function EventosCard({ image, title, description, link }) {
     const classes = useStyles();
 
     return (
-        <Card className={classes.root} raised>
+        <Card className={classes.root} variant="outlined">
             <CardActionArea>
                 <CardMedia
                     component="img"
                     alt={title}
-                    height="200"
+                    width="100%"
                     image={image}
                     title={title}
                 />

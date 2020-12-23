@@ -4,42 +4,24 @@ const useStyles = makeStyles((theme) => ({
   icon: {
     marginRight: theme.spacing(3),
   },
-  card1: {
-    height: "100%",
-    width: "100%",
-    borderRadius: 20,
-    textAlign: "center",
-    "@media (max-width: 1000px)": {
-      width: "270px",
-    },
-    "@media (max-width: 480px)": {
-      left: "-15px",
-      position: "relative",
-      width: "350px",
-    },
-    "@media (max-width: 420px)": {
-      width: "300px",
-      left: "-15px",
-      position: "relative",
-    },
-  },
   card: {
     height: "100%",
     width: "100%",
     borderRadius: 5,
   },
 
+  score: {
+    height: "100%",
+    width: "100%",
+    borderRadius: 5
+  },
+
+  score_context: {
+    marginBottom: "20px"
+  },
+
   cardContent: {
     flexGrow: 1,
-  },
-  cardContent1: {
-    flexGrow: 1,
-    "@media (max-width: 1000px)": {
-      marginBottom: "80px",
-    },
-    "@media (max-width: 820px)": {
-      marginBottom: "100px",
-    },
   },
   footer: {
     backgroundColor: theme.palette.background.paper,
@@ -65,6 +47,19 @@ const useStyles = makeStyles((theme) => ({
   },
   container: {
     marginTop: "70px",
+  },
+  root: {
+    display: 'flex',
+    flexWrap: 'wrap',
+  },
+  margin: {
+    margin: theme.spacing(1),
+  },
+  withoutLabel: {
+    marginTop: theme.spacing(3),
+  },
+  textField: {
+    width: '100%',
   },
 }));
 

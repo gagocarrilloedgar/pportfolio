@@ -7,6 +7,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
+import { Button, Grid } from '@material-ui/core';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -44,11 +45,11 @@ function a11yProps(index) {
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: theme.palette.background.paper,
-    width: 1000,
+    width:"100%",
   },
 }));
 
-export default function FullWidthTabs() {
+export default function FullWidthTabs({ registerdescription, registerlink }) {
   const classes = useStyles();
   const theme = useTheme();
   const [value, setValue] = React.useState(0);
@@ -74,8 +75,7 @@ export default function FullWidthTabs() {
         >
           <Tab label="Parrilla" {...a11yProps(0)} />
           <Tab label="Registro" {...a11yProps(1)} />
-          <Tab label="Compañias" {...a11yProps(2)} />
-          <Tab label="Premios" {...a11yProps(3)} />
+          <Tab label="Premios" {...a11yProps(2)} />
         </Tabs>
       </AppBar>
       <SwipeableViews
@@ -84,16 +84,18 @@ export default function FullWidthTabs() {
         onChangeIndex={handleChangeIndex}
       >
         <TabPanel value={value} index={0} dir={theme.direction}>
-          Item One
+          Todavía no hay no ha comenzado el evento. Una vez de comienzo, se creará la tabla de puntucaiones
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
-          Item Two
+          <Grid container align="left">
+            {registerdescription}
+          </Grid>
+          <Button variant="outlined" color="primary" onClick={() => window.open(registerlink, "_blank")}>
+            {"Registrarme"}
+          </Button>
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
-          Item Three
-        </TabPanel>
-        <TabPanel value={value} index={3} dir={theme.direction}>
-          Premios
+          {"Tendremos esta sección actualizada muy pronto, estate atento"}
         </TabPanel>
       </SwipeableViews>
     </div>

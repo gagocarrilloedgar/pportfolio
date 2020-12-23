@@ -21,11 +21,12 @@ import useStyles from "./style"
 import { UProfile } from '../UProfile';
 import { Hackathons } from '../Hackathons';
 import { Demium } from '../HackViews';
+import { Main } from '../Main';
 
 
 export default function UFrame() {
   const classes = useStyles();
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = React.useState(false);
   const handleDrawerOpen = () => {
     setOpen(true);
   };
@@ -81,6 +82,7 @@ export default function UFrame() {
               <Route path="/app/demium" component={Demium} />
               <Route path="/app/competiciones" component={Hackathons} />
               <Route path="/app/profile" component={UProfile} />
+              <Route path="/app" component={Main} />
             </Switch>
           </Grid>
         </Container>
