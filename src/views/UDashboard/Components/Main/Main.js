@@ -30,16 +30,22 @@ export const Main = () => {
                                 <Grid item xl={4} xs={0} align="center">
                                     <Avatar className={classes.avatar} />
                                 </Grid>
-                                <Grid container item xl={7} xs={12}  >
-                                    <Typography gutterBottom>
-                                        {"Ranking global: " + user.rank + "pts"}
-                                    </Typography>
-                                    <Typography gutterBottom>
-                                        {"Puntuación total softskills: " + user.rank + "pts"}
-                                    </Typography>
-                                    <Typography  gutterBottom>
-                                        {"Puntuación total hardskills:  " + user.rank + "pts"}
-                                    </Typography>
+                                <Grid align="left" style={{ margin: "20px" }}>
+                                    <Grid item xl={7} xs={12}>
+                                        <Typography gutterBottom>
+                                            {"Ranking global: " + user.rank + "pts"}
+                                        </Typography>
+                                    </Grid>
+                                    <Grid item xl={7} xs={12}>
+                                        <Typography gutterBottom>
+                                            {"Puntuación total softskills: " + user.softlevel + "pts"}
+                                        </Typography>
+                                    </Grid>
+                                    <Grid item xl={7} xs={12}>
+                                        <Typography gutterBottom>
+                                            {"Puntuación total hardskills:  " + user.hardlevel + "pts"}
+                                        </Typography>
+                                    </Grid>
                                 </Grid>
                             </Grid>
                         </CardContent>

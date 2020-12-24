@@ -13,6 +13,7 @@ import { IconContext } from "react-icons";
 import { CgWorkAlt } from "react-icons/cg"
 import User from "@material-ui/icons/PersonOutline"
 
+
 const IconProvider = (props) => {
   return (
     <IconContext.Provider value={{ size: "20px" }}>
@@ -24,19 +25,19 @@ const IconProvider = (props) => {
 
 export const mainListItems = (
   <div>
-    <ListItem button onClick={()=>window.location="/app/profile"}>
+    <ListItem button onClick={() => window.location = "/app/profile"}>
       <ListItemIcon>
         <User />
       </ListItemIcon>
       <ListItemText primary="Perfil" />
     </ListItem>
-    <ListItem button onClick={()=>window.location="/app"}>
+    <ListItem button onClick={() => window.location = "/app"}>
       <ListItemIcon>
         <DashboardIcon />
       </ListItemIcon>
       <ListItemText primary="Dashboard" />
     </ListItem>
-    <ListItem button onClick={()=>window.location="/app/competiciones"}>
+    <ListItem button onClick={() => window.location = "/app/competiciones"}>
       <ListItemIcon>
         <IconProvider>
           <GiPodiumWinner />
@@ -44,7 +45,7 @@ export const mainListItems = (
       </ListItemIcon>
       <ListItemText primary="Competiciones" />
     </ListItem>
-    <ListItem button>
+    <ListItem button onClick={() => window.location = "/app/companies"}>
       <ListItemIcon>
         <Companies />
       </ListItemIcon>
@@ -64,7 +65,7 @@ export const mainListItems = (
       </ListItemIcon>
       <ListItemText primary="Ofertas" />
     </ListItem>
-    <ListItem button>
+    <ListItem button onClick={() => window.location = "/app/academy"}>
       <ListItemIcon>
         <Learn />
       </ListItemIcon>

@@ -22,6 +22,8 @@ import { UProfile } from '../UProfile';
 import { Hackathons } from '../Hackathons';
 import { Demium } from '../HackViews';
 import { Main } from '../Main';
+import { Academy } from "../Academy";
+import { Companies } from '../Companies';
 
 
 export default function UFrame() {
@@ -79,6 +81,8 @@ export default function UFrame() {
         <Container maxWidth="lg" className={classes.container}>
           <Grid spacing={2}>
             <Switch>
+              <Route path="/app/companies" component={Companies} />
+              <Route path="/app/academy" component={Academy} />
               <Route path="/app/demium" component={Demium} />
               <Route path="/app/competiciones" component={Hackathons} />
               <Route path="/app/profile" component={UProfile} />
