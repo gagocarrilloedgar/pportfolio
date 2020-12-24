@@ -6,7 +6,7 @@
 
 *, *::before, *::after {
   box-sizing: content-box;
-  font-family: Fira, Sans;
+  font-family: Roboto, sans-serif !important;
 }
 
 html {
